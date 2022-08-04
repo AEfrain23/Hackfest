@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DeliveryDAO implements DAO<Delivery> {
+public class DeliveryDAO implements DAO <Delivery> {
 
     @Override
     public Delivery modelFromResult(ResultSet result) {

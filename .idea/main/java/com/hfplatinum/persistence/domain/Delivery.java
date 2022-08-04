@@ -1,4 +1,4 @@
-package com.hfplatinum.controllers;
+package com.hfplatinum.persistence.domain;
 
 import java.sql.Date;
 import java.util.Objects;

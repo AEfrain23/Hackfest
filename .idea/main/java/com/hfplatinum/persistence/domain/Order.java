@@ -1,4 +1,4 @@
-package com.hfplatinum.persistence;
+package com.hfplatinum.persistence.domain;
 package com.qa.newguinea.main.persistance;
 
 import java.sql.Date;

@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02336aae-4596-4656-b83f-28a22cb8c214" name="Changes" comment="more premade code from Dejan's local computer">
-      <change afterPath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/DriverDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/ManagerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/OrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="02336aae-4596-4656-b83f-28a22cb8c214" name="Changes" comment="Edits to local + Dejans IMS">
+      <change afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/controllers/CrudController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/domain/Domain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/utils/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/controllers/DeliveryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/controllers/DeliveryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/DeliveryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/dao/DeliveryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/DriverDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/dao/DriverDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/ManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/dao/ManagerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/dao/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/domain/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/domain/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/domain/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main/java/com.hfplatinum/persistence/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main/java/com/hfplatinum/persistence/domain/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +52,18 @@
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hfplatinum" />
+      <recent name="com.hfplatinum.persistence" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hfplatinum.persistence" />
+      <recent name="com.hfplatinum.dao" />
+      <recent name="com.hfplatinum.controllers" />
+      <recent name="com.hfplatinum.utils" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659609237779</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Edits to local + Dejans IMS">
+      <created>1659609923179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659609923179</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Edits to local + Dejans IMS">
+      <created>1659610032386</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659610032386</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base with delivery dao from Dejan's local computer" />
     <MESSAGE value="more premade code from Dejan's local computer" />
-    <option name="LAST_COMMIT_MESSAGE" value="more premade code from Dejan's local computer" />
+    <MESSAGE value="Edits to local + Dejans IMS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edits to local + Dejans IMS" />
   </component>
 </project>

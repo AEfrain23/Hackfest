@@ -1,4 +1,4 @@
-package com.hfplatinum.persistence;
+package com.hfplatinum.persistence.domain;
 
 import java.util.Objects;
 
