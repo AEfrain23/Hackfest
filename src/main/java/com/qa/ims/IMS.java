@@ -6,9 +6,11 @@ import org.apache.logging.log4j.Logger;
 import com.qa.ims.controller.Action;
 import com.qa.ims.controller.CrudController;
 import com.qa.ims.controller.CustomerController;
+import com.qa.ims.controller.DriverController;
 import com.qa.ims.controller.ItemController;
 import com.qa.ims.controller.OrderController;
 import com.qa.ims.persistence.dao.CustomerDAO;
+import com.qa.ims.persistence.dao.DriverDAO;
 import com.qa.ims.persistence.dao.ItemDAO;
 import com.qa.ims.persistence.dao.OrderDAO;
 import com.qa.ims.persistence.dao.OrderDetailsDAO;
@@ -24,16 +26,20 @@ public class IMS {
 	private final Utils utils;
 	private final ItemController items;
 	private final OrderController orders;
+	private final DriverController drivers;
 
 	public IMS() {
 		this.utils = new Utils();
 		final CustomerDAO customerDAO = new CustomerDAO();
+		final DriverDAO driverDAO = new DriverDAO();
 		final ItemDAO itemDAO = new ItemDAO();
 		final OrderDAO orderDAO = new OrderDAO();
 		final OrderDetailsDAO orderDetailsDAO = new OrderDetailsDAO();
+		
 		this.orders = new OrderController(orderDAO, orderDetailsDAO, utils, itemDAO, customerDAO);
 		this.customers = new CustomerController(customerDAO, utils);
 		this.items = new ItemController(itemDAO, utils);
+		this.drivers = new DriverController(driverDAO, utils);
 	}
 
 
@@ -67,6 +73,9 @@ public class IMS {
 				break;
 			case ORDER:
 				active = this.orders;
+				break;
+			case DRIVER:
+				active = this.drivers;
 				break;
 			case STOP:
 				return;
