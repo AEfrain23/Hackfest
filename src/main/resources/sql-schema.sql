@@ -43,3 +43,10 @@ CREATE TABLE IF NOT EXISTS `hackfest`.`delivery` (
 FOREIGN KEY(fk_order_id) REFERENCES orders(id),
 PRIMARY KEY (`id`)
 );
+
+CREATE TABLE IF NOT EXISTS `hackfest`.`driver` (
+    `driver_id` INT(15) NOT NULL AUTO_INCREMENT,
+    `first_name` VARCHAR(35) DEFAULT NULL,
+    `surname` VARCHAR(35) DEFAULT NULL,
+    PRIMARY KEY (`driver_id`)
+);
