@@ -13,16 +13,16 @@ public class Driver {
 	}
 
 	public Driver(Long driver_id, String firstName, String surname) {
-		this.setId(driver_id);
+		this.setDriverId(driver_id);
 		this.setFirstName(firstName);
 		this.setSurname(surname);
 	}
 
-	public Long getId() {
+	public Long getDriverId() {
 		return driver_id;
 	}
 
-	public void setId(Long driver_id) {
+	public void setDriverId(Long driver_id) {
 		this.driver_id = driver_id;
 	}
 

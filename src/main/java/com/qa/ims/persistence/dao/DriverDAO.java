@@ -20,7 +20,7 @@ public class DriverDAO implements Dao<Driver> {
 
 	@Override
 	public Driver modelFromResultSet(ResultSet resultSet) throws SQLException {
-		Long id = resultSet.getLong("id");
+		Long id = resultSet.getLong("driver_id");
 		String firstName = resultSet.getString("first_name");
 		String surname = resultSet.getString("surname");
 		return new Driver(id, firstName, surname);
@@ -83,10 +83,10 @@ public class DriverDAO implements Dao<Driver> {
 	}
 
 	@Override
-	public Driver read(Long id) {
+	public Driver read(Long driver_id) {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				PreparedStatement statement = connection.prepareStatement("SELECT * FROM drivers WHERE id = ?");) {
-			statement.setLong(1, id);
+			statement.setLong(1, driver_id);
 			try (ResultSet resultSet = statement.executeQuery();) {
 				resultSet.next();
 				return modelFromResultSet(resultSet);
@@ -112,9 +112,9 @@ public class DriverDAO implements Dao<Driver> {
 						.prepareStatement("UPDATE drivers SET first_name = ?, surname = ? WHERE id = ?");) {
 			statement.setString(1, driver.getFirstName());
 			statement.setString(2, driver.getSurname());
-			statement.setLong(3, driver.getId());
+			statement.setLong(3, driver.getDriverId());
 			statement.executeUpdate();
-			return read(driver.getId());
+			return read(driver.getDriverId());
 		} catch (Exception e) {
 			LOGGER.debug(e);
 			LOGGER.error(e.getMessage());
@@ -128,10 +128,10 @@ public class DriverDAO implements Dao<Driver> {
 	 * @param id - id of the driver
 	 */
 	@Override
-	public int delete(long id) {
+	public int delete(long driver_id) {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				PreparedStatement statement = connection.prepareStatement("DELETE FROM drivers WHERE id = ?");) {
-			statement.setLong(1, id);
+			statement.setLong(1, driver_id);
 			return statement.executeUpdate();
 		} catch (Exception e) {
 			LOGGER.debug(e);
